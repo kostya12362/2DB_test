@@ -30,5 +30,5 @@ $ docker-compose -f docker-compose.yml exec web python manage.py collectstatic -
 ```
 [http://localhost/swagger/](http://localhost/swagger/) <br />
  <br />
-You can see the public project at the link below<br />
+You can see the public project at the link below <br />
 [AWS RDS and EC2](http://3.21.33.138/swagger/)
