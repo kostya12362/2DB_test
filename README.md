@@ -5,6 +5,7 @@ Clone this repo
 
 in derictory add file 
 .env
+```script
 SECRET_KEY='c+-xzhb(j+s4@f0-1k49m#n)t=u153xl))yj!u*jzyclhrz9zw'
 DEBUG=True
 DJANGO_ALLOWED_HOSTS=localhost 0.0.0.0 [::1]
@@ -13,6 +14,7 @@ DB_USER=kostya12362
 DB_PASS=ostapenko123
 DB_HOST=db
 DB_PORT=5432
+```
 
 
 .env.db
