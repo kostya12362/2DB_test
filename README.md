@@ -28,5 +28,5 @@ $ docker-compose -f docker-compose.yml up -d --build
 $ docker-compose -f docker-compose.yml exec web python manage.py migrate --noinput
 $ docker-compose -f docker-compose.yml exec web python manage.py collectstatic --no-input --clear
 ```
-[http://localhost/swagger/](http://localhost/swagger/)
+[http://localhost/swagger/](http://localhost/swagger/) <br />
 [AWS RDS and EC2](http://3.21.33.138/swagger/)
