@@ -6,21 +6,23 @@ Clone this repo
 in derictory add file 
 .env
 ```script
-SECRET_KEY='c+-xzhb(j+s4@f0-1k49m#n)t=u153xl))yj!u*jzyclhrz9zw'
+SECRET_KEY=<YOUR SECRET KEY>
 DEBUG=True
 DJANGO_ALLOWED_HOSTS=localhost 0.0.0.0 [::1]
-DB_NAME=django_db
-DB_USER=kostya12362
-DB_PASS=ostapenko123
+DB_NAME=<NAME OF YOUR DATABASE>
+DB_USER=<DATABASE USERNAME>
+DB_PASS=<DATABASE PASSWORD>
 DB_HOST=db
 DB_PORT=5432
 ```
 
 
 .env.db
-POSTGRES_USER=kostya12362
-POSTGRES_PASSWORD=ostapenko123
-POSTGRES_DB=django_db
+```script
+POSTGRES_USER=<DATABASE USERNAME>
+POSTGRES_PASSWORD=<DATABASE PASSWORD>
+POSTGRES_DB=<NAME OF YOUR DATABASE>
+```
 
 docker-compose -f docker-compose.yml up -d --build
 
