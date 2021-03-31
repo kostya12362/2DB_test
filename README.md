@@ -2,7 +2,7 @@
 
 Clone this repo 
 
-in derictory task_api add files
+In folder "task_api" add files </br>
 .env
 ```script
 SECRET_KEY=<YOUR SECRET KEY>
