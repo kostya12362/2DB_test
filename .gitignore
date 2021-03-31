@@ -132,3 +132,7 @@ dmypy.json
 # settings
 task_api/.env
 task_api/.env.db
+
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
