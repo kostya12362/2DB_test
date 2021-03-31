@@ -24,12 +24,10 @@ POSTGRES_PASSWORD=<DATABASE PASSWORD>
 POSTGRES_DB=<NAME OF YOUR DATABASE>
 ```
 
-docker-compose -f docker-compose.yml up -d --build
-
-docker-compose -f docker-compose.yml exec web python manage.py migrate --noinput
-
-docker-compose -f docker-compose.yml exec web python manage.py collectstatic --no-input --clear
-
+```bash
+$ docker-compose -f docker-compose.yml up -d --build
+$ docker-compose -f docker-compose.yml exec web python manage.py migrate --noinput
+$ docker-compose -f docker-compose.yml exec web python manage.py collectstatic --no-input --clear
 http://localhost/swagger/
-
+```
 AWS run all 
