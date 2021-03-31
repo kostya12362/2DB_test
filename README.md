@@ -2,8 +2,8 @@
 
 Clone this repo 
 
-In folder "task_api" add files </br>
-.env
+In folder `task_api` add files: </br>
+`.env`
 ```script
 SECRET_KEY=<YOUR SECRET KEY>
 DEBUG=True
@@ -16,7 +16,7 @@ DB_PORT=5432
 ```
 
 
-.env.db
+`.env.db`
 ```script
 POSTGRES_USER=<DATABASE USERNAME if you use AWS RDS add Master username>
 POSTGRES_PASSWORD=<DATABASE PASSWORD, if you use AWS RDS add DB password>
