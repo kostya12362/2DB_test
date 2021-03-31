@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+  web:
+    build: ./
+    command: gunicorn task_api.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+    ports:
+      - 8000
+    env_file:
+      - ./task_api/.env
+    depends_on:
+      - db
+  db:
+    image: postgres:12.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./task_api/.env.db
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - web
+volumes:
+  postgres_data:
